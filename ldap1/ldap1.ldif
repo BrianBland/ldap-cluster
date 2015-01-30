@@ -1,0 +1,24 @@
+dn: o=widgets,dc=example,dc=com
+objectClass: organization
+o: widgets
+
+dn: cn=this,o=widgets,dc=example,dc=com
+objectClass: device
+cn: this
+
+dn: cn=that,o=widgets,dc=example,dc=com
+objectClass: device
+cn: that
+
+dn: cn=thingie,o=widgets,dc=example,dc=com
+objectClass: device
+cn: thingie
+
+# definition creates o=grommets RDN
+# and refers it to ldap2
+
+dn: o=grommets,dc=example,dc=com
+objectClass: referral
+objectClass: extensibleObject
+o: grommets
+ref: ldap://localdocker:3002/o=grommets,dc=example,dc=com

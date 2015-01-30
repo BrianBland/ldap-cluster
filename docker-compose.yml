@@ -1,0 +1,12 @@
+ldap1:
+  build: ldap1
+  ports:
+  - "3001:389"
+ldap2:
+  build: ldap2
+  ports:
+  - "3002:389"
+ldap3:
+  build: ldap3
+  ports:
+  - "3003:389"

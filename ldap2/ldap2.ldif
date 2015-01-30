@@ -1,0 +1,13 @@
+dn: o=grommets,dc=example,dc=com
+objectClass: organization
+o: grommets
+
+dn: ou=us,o=grommets,dc=example,dc=com
+objectClass: organizationalUnit
+ou: us
+
+dn: ou=uk,o=grommets,dc=example,dc=com
+objectClass: referral
+objectClass: extensibleObject
+ou: uk
+ref: ldap://localdocker:3003/ou=uk,o=grommets,dc=example,dc=com

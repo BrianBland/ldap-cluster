@@ -1,0 +1,19 @@
+dn: o=grommets,dc=example,dc=com
+objectClass: organization
+o: grommets
+
+dn: ou=uk,o=grommets,dc=example,dc=com
+objectClass: organizationalUnit
+ou: uk
+
+dn: cn=bfirsh,ou=uk,o=grommets,dc=example,dc=com
+objectClass: inetOrgPerson
+cn: bfirsh
+sn: bfirsh
+userPassword: password
+
+dn: cn=aanand,ou=uk,o=grommets,dc=example,dc=com
+objectClass: inetOrgPerson
+cn: aanand
+sn: aanand
+userPassword: password
